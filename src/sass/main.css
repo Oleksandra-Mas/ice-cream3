@@ -70,4 +70,123 @@ a {
           clip-path: inset(50%);
   margin: -1px;
 }
+
+.advantages-list__number {
+  font-family: var(--second-font-family);
+  font-size: 36px;
+  line-height: 1.138;
+  letter-spacing: 0.04em;
+  color: var(--main-red-color);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__number {
+    font-size: 48px;
+    line-height: 1.146;
+    text-transform: lowercase;
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__number {
+    font-size: 58px;
+    line-height: 1.138;
+    margin-bottom: 15px;
+  }
+}
+
+.advantages-list__description {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--black-text-color);
+  padding-right: 80px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .advantages-list__description {
+    max-width: 230px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__description {
+    font-size: 14px;
+    line-height: 1.74;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__description {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.advantages-list__item {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    -ms-flex-preferred-size: calc((100% - 3 * 90px) / 3);
+        flex-basis: calc((100% - 3 * 90px) / 3);
+    margin-left: 90px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    -ms-flex-preferred-size: calc((100% - 3 * 90px) / 3);
+        flex-basis: calc((100% - 3 * 90px) / 3);
+    margin-left: 90px;
+    margin-bottom: 0;
+  }
+}
+
+.advantages-list__item--milk:before {
+  content: url("../images/advantages/advantages-1_laptop-min.png");
+}
+
+.advantages-list__item--apples:before {
+  content: url("../images/advantages/advantages-2_laptop-min.png");
+}
+
+.advantages-list__item--heart:before {
+  content: url("../images/advantages/advantages-3_laptop-min.png");
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 90px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 90px);
+  }
+}
+
+.advantages-section {
+  background-color: var(--light-pink-background-color);
+}
 /*# sourceMappingURL=main.css.map */

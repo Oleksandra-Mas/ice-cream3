@@ -41,17 +41,18 @@
 }
 
 // ГДЕ МОЙ BEFORE????
-.customer__comment-text::before {
+.customer__comment-box::before {
   content: '';
   width: 54px;
   height: 40px;
-  background-color: black;
+  background-image: url('../images/advantages/advantages-3_mobile-min.png');
 }
 
 .customer__signature::before {
+  display: inline-block;
   content: '';
-  // width: 32px;
-  // height: 4px;
+  width: 32px;
+  height: 4px;
 
   width: 35px;
   height: 35px;

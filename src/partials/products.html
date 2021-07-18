@@ -5,16 +5,19 @@
         <ul class="ware-list list">
             <li class="ware-list__item ware-list__item--pink">
                 <h3 class="ware-list__title">ice cream</h3>
-                <p class="ware-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <p class="ware-list__text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor
                     incididunt ut
                     labore et
                 </p>
-                <button type="button" class="ware-list__button">
+                <button type="button" class="ware-list__button" data-toggle-id="su">
                     <svg class="ware-list__icon">
                         <use class="" href="./images/sprite.svg#icon-arrow-1"></use>
                     </svg>
                 </button>
+                <form id="su" hidden>
+                   <p class="ware-list__button--overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum doloribus accusamus, dolores molestias ad impedit. Provident error nulla, voluptatem officiis praesentium incidunt atque aliquid natus quae repudiandae cum delectus voluptate doloremque, illum ducimus ex porro consectetur. Magnam impedit incidunt unde praesentium qui excepturi, iusto eligendi reprehenderit quibusdam sit doloribus perspiciatis saepe ut aliquid aut culpa dolore reiciendis maiores repudiandae possimus dolorem quos. Ducimus quaerat maxime nisi ab, assumenda, obcaecati molestiae dolores earum porro, hic voluptate reiciendis repellat mollitia laudantium recusandae quas! Suscipit temporibus odio accusamus adipisci non praesentium ipsam cum enim, consequuntur, quidem, nisi laborum delectus fuga ducimus accusantium nesciunt!</p>
+                </form>
             </li>
             <li class="ware-list__item ware-list__item--orange">
                 <h3 class="ware-list__title ware-list__title--orange">ice coffee</h3>
@@ -23,11 +26,21 @@
                     incididunt ut
                     labore et
                 </p>
-                <button type="button" class="ware-list__button">
+                <button type="button" class="ware-list__button" data-toggle-id="su1">
                     <svg class="ware-list__icon">
                         <use class="" href="./images/sprite.svg#icon-arrow-1"></use>
                     </svg>
                 </button>
+                <form id="su1" hidden>
+                    <p class="ware-list__button--overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum doloribus
+                        accusamus, dolores molestias ad impedit. Provident error nulla, voluptatem officiis praesentium incidunt atque
+                        aliquid natus quae repudiandae cum delectus voluptate doloremque, illum ducimus ex porro consectetur. Magnam
+                        impedit incidunt unde praesentium qui excepturi, iusto eligendi reprehenderit quibusdam sit doloribus
+                        perspiciatis saepe ut aliquid aut culpa dolore reiciendis maiores repudiandae possimus dolorem quos. Ducimus
+                        quaerat maxime nisi ab, assumenda, obcaecati molestiae dolores earum porro, hic voluptate reiciendis repellat
+                        mollitia laudantium recusandae quas! Suscipit temporibus odio accusamus adipisci non praesentium ipsam cum enim,
+                        consequuntur, quidem, nisi laborum delectus fuga ducimus accusantium nesciunt!</p>
+                </form>
             </li>
             <li class="ware-list__item ware-list__item--green">
                 <h3 class="ware-list__title ware-list__title--green">milkshakes</h3>
@@ -36,12 +49,30 @@
                     incididunt ut
                     labore et
                 </p>
-                <button type="button" class="ware-list__button">
+                <button type="button" class="ware-list__button" data-toggle-id="su2">
                     <svg class="ware-list__icon">
                         <use class="" href="./images/sprite.svg#icon-arrow-1"></use>
                     </svg>
                 </button>
+                <form id="su2" hidden>
+                    <p class="ware-list__button--overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum doloribus
+                        accusamus, dolores molestias ad impedit. Provident error nulla, voluptatem officiis praesentium incidunt atque
+                        aliquid natus quae repudiandae cum delectus voluptate doloremque, illum ducimus ex porro consectetur. Magnam
+                        impedit incidunt unde praesentium qui excepturi, iusto eligendi reprehenderit quibusdam sit doloribus
+                        perspiciatis saepe ut aliquid aut culpa dolore reiciendis maiores repudiandae possimus dolorem quos. Ducimus
+                        quaerat maxime nisi ab, assumenda, obcaecati molestiae dolores earum porro, hic voluptate reiciendis repellat
+                        mollitia laudantium recusandae quas! Suscipit temporibus odio accusamus adipisci non praesentium ipsam cum enim,
+                        consequuntur, quidem, nisi laborum delectus fuga ducimus accusantium nesciunt!</p>
+                </form>
             </li>
         </ul>
     </div>
 </section>
+<script>
+    document.onclick = function (event) {
+        var target = event.target; var id = target.getAttribute('data-toggle-id');
+        if (!id) return;
+        var elem = document.getElementById(id);
+        elem.hidden = !elem.hidden;
+    };
+</script>

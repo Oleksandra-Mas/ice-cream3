@@ -1,0 +1,22 @@
+.customer__comment-box {
+  position: relative;
+  &:before {
+    @extend %customer__comment-box-before;
+  }
+}
+
+%customer__comment-box-before {
+  display: block;
+}
+
+.customer__comment-box:before {
+  width: 54px;
+  height: 40px;
+  content: '';
+  background-image: url('../images/sprite.svg#icon-quotation-mark');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  //   position: absolute;
+  //   /images/sprite.svg#icon-quotation-mark
+}

@@ -1,10 +1,19 @@
 <section class="customer-section section">
     <div class="container">
-        <!-- <img srcset="./images/customers-review-1_mobile-min.png 1x, ./images/customers-review-1_mobile@2x-min.png 2x" 
-        src="../images/customers-review-1_mobile-min.png"
-        alt="customer-1" width="85" height="85"> -->
+        <h2 class="visually-hidden">Customer reviews</h2>
+        
+        <picture>
+            <source srcset="./images/customer-review/customer-review-1_laptop-min.png 1x, ./images/customer-review/customer-review-1_laptop@2x-min.png 2x"
+                media="(min-width: 1200px)">
+            <source srcset="./images/customer-review/customer-review-1_tablet-min.png 1x, ./images/customer-review/customer-review-1_tablet@2x-min.png 2x"
+                media="(min-width: 768px)">
+            <source srcset="./images/customer-review/customer-review-1_mobile-min.png 1x, ./images/customer-review/customer-review-1_mobile@2x-min.png 2x"
+                media="(min-width: 320px)">
+            <img src="./images/customer-review/customer-review-1_mobile-min.png"
+            alt="customer-1" width="85" height="85">
+        </picture>
 
-        <div class="customer__comment-overlay">
+        <div class="customer__comment-box">
             <p class="customer__comment">
                 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc,
                 accumsan
@@ -13,7 +22,7 @@
         </div>
         
         <svg width="32" height="4">
-            <use href="images/sprite.svg#icon-ellipse-group-review"></use>
+            <use href="./images/sprite.svg#icon-ellipse-group-review"></use>
         </svg>
         
         <p class="customer__signature">
@@ -21,13 +30,13 @@
         </p>
 
         <svg width="12" height="12">
-            <use href="images/sprite.svg#icon-home"></use>
+            <use href="./images/sprite.svg#icon-home"></use>
         </svg>
         <svg width="12" height="12">
-            <use href="images/sprite.svg#icon-ellipse"></use>
+            <use href="./images/sprite.svg#icon-ellipse"></use>
         </svg>
         <svg width="12" height="12">
-            <use href="images/sprite.svg#icon-ellipse"></use>
+            <use href="./images/sprite.svg#icon-ellipse"></use>
         </svg>
     </div>
 </section>

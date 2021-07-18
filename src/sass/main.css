@@ -686,6 +686,24 @@ a {
   stroke: var(--main-red-color);
 }
 
+.customer__comment-box {
+  position: relative;
+}
+
+.customer__comment-box:before {
+  display: block;
+}
+
+.customer__comment-box::before {
+  width: 54px;
+  height: 40px;
+  content: '';
+  background-image: url("/images/sprite.svg#icon-quotation-mark");
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: black;
+}
+
 .products__text {
   font-family: var(--second-font-family);
   font-style: normal;

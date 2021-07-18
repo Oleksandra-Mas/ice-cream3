@@ -1,20 +1,20 @@
 .contacts-section {
-  // background: {
-  background: url(../images/contacts/contacts-background_laptop-min.png),
-    linear-gradient(0deg, rgb(255, 245, 246) 85%, rgb(255, 255, 255) 84%);
+  background: linear-gradient(0deg, rgb(255, 245, 246) 85%, rgb(255, 255, 255) 84%);
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  max-width: 1280px;
-
   margin: 0 auto;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background: url(../images/contacts/contacts-background_laptop@2x-min.png),
-      linear-gradient(0deg, rgb(255, 245, 246) 85%, rgb(255, 255, 255) 84%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  position: relative;
+  &__bg-img {
+    display: none;
+    position: absolute;
+    width: 100%;
     max-width: 1280px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
   }
 }
 

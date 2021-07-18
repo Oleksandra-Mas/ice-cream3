@@ -82,11 +82,10 @@
   background-image: url('../images/about/milk-background_mobile-min.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 720px;
+  background-position: 0% 90%;
 
-  // чтобы не растягивалось:
-  // width: 100%;
-  // max-width: 320px;
+  width: auto;
+  max-width: 100%;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
@@ -94,9 +93,13 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
+
   @media screen and (min-width: 1280px) {
     background-image: url('../images/about/milk-background_laptop-min.png');
-    background-position: 0 342px;
+    background-position: 0% 140%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
         background-image: url('../images/about/milk-background_laptop@2x-min.png');

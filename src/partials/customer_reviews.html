@@ -1,8 +1,8 @@
-<section class="customer-section section">
+<section class="customer__section section">
     <div class="container">
         <h2 class="visually-hidden">Customer reviews</h2>
         
-        <picture>
+        <picture class="customer__portrait">
             <source srcset="./images/customer-review/customer-review-1_laptop-min.png 1x, ./images/customer-review/customer-review-1_laptop@2x-min.png 2x"
                 media="(min-width: 1200px)">
             <source srcset="./images/customer-review/customer-review-1_tablet-min.png 1x, ./images/customer-review/customer-review-1_tablet@2x-min.png 2x"
@@ -14,7 +14,7 @@
         </picture>
 
         <div class="customer__comment-box">
-            <p class="customer__comment">
+            <p class="customer__comment-text">
                 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc,
                 accumsan
                 congue. Lorem ipsum primis in nibh vel risus.
@@ -29,14 +29,23 @@
             Emily, Los Angeles
         </p>
 
-        <svg width="12" height="12">
-            <use href="./images/sprite.svg#icon-home"></use>
-        </svg>
-        <svg width="12" height="12">
-            <use href="./images/sprite.svg#icon-ellipse"></use>
-        </svg>
-        <svg width="12" height="12">
-            <use href="./images/sprite.svg#icon-ellipse"></use>
-        </svg>
+        <ul class="customer__slider-list">
+            <li class="customer__slider-item">
+                <svg class="customer__slider-icon customer__slider-icon--current" width="12" height="12">
+                    <use href="./images/sprite.svg#icon-home"></use>
+                </svg>
+            </li>
+            <li class="customer__slider-item">
+                <svg class="customer__slider-icon" width="12" height="12">
+                    <use href="./images/sprite.svg#icon-ellipse"></use>
+                </svg>
+            </li>
+            <li class="customer__slider-item">
+                <svg class="customer__slider-icon" width="12" height="12">
+                    <use href="./images/sprite.svg#icon-ellipse"></use>
+                </svg>
+            </li>
+        </ul>
+         
     </div>
 </section>

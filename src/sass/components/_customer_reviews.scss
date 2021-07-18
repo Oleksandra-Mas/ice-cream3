@@ -1,22 +1,88 @@
+.customer__section {
+  // position: relative;
+}
+
+.customer__portrait {
+  // position: absolute;
+  display: inline-block;
+  // left: 40%;
+  // надо зафиксировать посредине
+
+  margin-bottom: 29px;
+}
+
 .customer__comment-box {
-  position: relative;
-  &:before {
-    @extend %customer__comment-box-before;
-  }
+  width: 280px;
+  height: 308px;
+  padding: 43px 0 20px 0;
+  margin: 0 auto;
+
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  justify-content: center;
+
+  color: var(--black-text-color);
+  background-color: var(--quote-background-grey-color);
 }
 
-%customer__comment-box-before {
-  display: block;
+.customer__comment-text {
+  margin: 0 62px;
 }
 
-.customer__comment-box:before {
+.customer__comment-text p {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
+  background-size: 100% 3px;
+  background-image: linear-gradient(to right, red, blue);
+}
+
+// ГДЕ МОЙ BEFORE????
+.customer__comment-text::before {
+  content: '';
   width: 54px;
   height: 40px;
-  content: '';
-  background-image: url('../images/sprite.svg#icon-quotation-mark');
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: black;
+}
 
-  //   position: absolute;
-  //   /images/sprite.svg#icon-quotation-mark
+.customer__signature::before {
+  content: '';
+  // width: 32px;
+  // height: 4px;
+
+  width: 35px;
+  height: 35px;
+  background-color: brown;
+}
+
+.customer__signature {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: center;
+
+  color: var(--black-text-color);
+}
+
+.customer__slider-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.customer__slider-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.customer__slider-icon {
+  fill: #d9d9d9;
+}
+
+.customer__slider-icon--current {
+  fill: #d31342;
 }

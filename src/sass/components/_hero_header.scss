@@ -1,0 +1,110 @@
+body {
+  background-color: pink;
+}
+.menu-toggle {
+  min-height: 12px;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+.menu-icon-open {
+  stroke: var(--main-red-color);
+  .menu-toggle:hover &,
+  .menu-toggle:focus & {
+    stroke: var(--main-white-color);
+  }
+}
+.nav-list {
+  display: none;
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 12px;
+    margin-right: 110px;
+  }
+}
+.nav-list__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--main-white-color);
+}
+.nav-list__link {
+  .menu-site-nav__item:hover &,
+  .menu-site-nav__item:hover & {
+    color: var(--main-red-color);
+  }
+}
+.nav-list__item {
+  & + & {
+    margin-left: 35px;
+  }
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 38px;
+  @media (min-width: 1280px) {
+    padding-left: 240px;
+  }
+}
+.logo-link {
+  margin-right: 61px;
+  @media (min-width: 768px) {
+    margin-right: 290px;
+  }
+  @media (min-width: 1280px) {
+    position: absolute;
+    bottom: 0;
+    left: -70px;
+    margin: -4px;
+  }
+}
+.header__button {
+  margin: 0;
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 11px 38px;
+  line-height: 1.3;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--main-red-color);
+  background-color: var(--main-white-color);
+  border: transparent;
+  height: 44px;
+  border-radius: 22px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1280px) {
+    margin-left: 30px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--hover-grey-color);
+  }
+}
+.menu__button-icon {
+  stroke: var(--main-red-color);
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+}

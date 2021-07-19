@@ -1,17 +1,17 @@
-.customer__section {
-  // position: relative;
+.customer__slider {
 }
 
 .customer__portrait {
-  // position: absolute;
-  display: inline-block;
-  // left: 40%;
-  // надо зафиксировать посредине
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 29px;
 }
 
 .customer__comment-box {
+  outline: 1px solid black;
+  position: relative;
+
   width: 280px;
   height: 308px;
   padding: 43px 0 20px 0;
@@ -26,37 +26,73 @@
 
   color: var(--black-text-color);
   background-color: var(--quote-background-grey-color);
+
+  &::before {
+    @extend %customer__comment-box-before;
+  }
+}
+
+%customer__comment-box-before {
+  display: block;
+  position: absolute;
 }
 
 .customer__comment-text {
   margin: 0 62px;
+  // padding: 11px;
 }
 
 .customer__comment-text p {
   display: inline;
+
   background-repeat: no-repeat;
   background-position: center bottom 1px;
   background-size: 100% 3px;
   background-image: linear-gradient(to right, red, blue);
 }
 
-// ГДЕ МОЙ BEFORE????
 .customer__comment-box::before {
   content: '';
   width: 54px;
   height: 40px;
-  background-image: url('../images/advantages/advantages-3_mobile-min.png');
-}
+  background-image: url('../images/customer-review/comment-sign_mobile-min.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 
-.customer__signature::before {
-  display: inline-block;
-  content: '';
-  width: 32px;
-  height: 4px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/customer-review/comment-sign_mobile@2x-min.png');
+    }
+  }
 
-  width: 35px;
-  height: 35px;
-  background-color: brown;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/customer-review/comment-sign_tablet-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-sign_tablet@2x-min.png');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/customer-review/comment-sign_laptop-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-sign_laptop@2x-min.png');
+      }
+    }
+  }
 }
 
 .customer__signature {
@@ -68,6 +104,58 @@
   text-align: center;
 
   color: var(--black-text-color);
+
+  @extend %customer__signature-before;
+}
+
+%customer__signature-before {
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+.customer__signature::before {
+  content: '';
+  width: 32px;
+  height: 4px;
+  background-image: url('../images/customer-review/comment-three-dots_mobile-min.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/customer-review/comment-three-dots_mobile@2x-min.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/customer-review/comment-three-dots_tablet-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-three-dots_tablet@2x-min.png');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/customer-review/comment-three-dots_laptop-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-three-dots_laptop@2x-min.png');
+      }
+    }
+  }
 }
 
 .customer__slider-list {

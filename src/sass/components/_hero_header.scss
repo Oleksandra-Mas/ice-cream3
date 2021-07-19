@@ -41,6 +41,11 @@ body {
   font-size: 16px;
   line-height: 1.31;
   color: var(--main-white-color);
+
+  .nav-list__item:focus &,
+  .nav-list__item:hover & {
+    color: var(--main-red-color);
+  }
 }
 .nav-list__link {
   .menu-site-nav__item:hover &,

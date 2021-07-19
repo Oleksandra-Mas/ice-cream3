@@ -2,6 +2,10 @@
   stroke: var(--main-white-color);
   height: 14px;
   width: 14px;
+  .menu__close-button:hover &,
+  .menu__close-button:focus & {
+    stroke: var(--main-red-color);
+  }
 }
 .menu__close-button {
   min-height: 14px;
@@ -29,7 +33,7 @@
   }
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: var(--main-red-color);
   }
 }
 .menu__container {
@@ -84,9 +88,6 @@
 .menu-site-nav {
   margin-top: 32px;
 }
-.menu-icon {
-  stroke: brown;
-}
 .menu__button {
   margin: 0 auto;
   font-family: var(--main-font-family);
@@ -103,6 +104,7 @@
   background-color: var(--main-white-color);
   border: transparent;
   border-radius: 22px;
+  height: 44px;
   @media (min-width: 768px) {
     padding: 11px 44px 11px 52px;
   }
@@ -110,4 +112,10 @@
   &:focus {
     background-color: var(--hover-grey-color);
   }
+}
+.menu__button-icon {
+  stroke: var(--main-red-color);
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
 }

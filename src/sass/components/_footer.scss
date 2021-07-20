@@ -1,0 +1,162 @@
+.footer {
+  padding-top: 112px;
+  padding-bottom: 24px;
+  background-color: var(--light-pink-background-color);
+  @media screen and (min-width: 768px) {
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 165px;
+    padding-bottom: 10px;
+  }
+
+  &_page {
+    margin-bottom: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 90px;
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 98px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &_title {
+    width: 234px;
+    height: 135px;
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      height: 183px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 476px;
+    }
+  }
+  &_title-made {
+    font-weight: 400;
+    font-family: var(--second-font-family);
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--section-header-pink-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.154;
+      letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.132;
+    }
+  }
+  &_title-passion {
+    margin-top: 18px;
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.146;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-red-color);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+      font-size: 48px;
+      line-height: 1.154;
+      letter-spacing: 0.06em;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 38px;
+      font-size: 56px;
+      line-height: 1.138px;
+    }
+  }
+ 
+  &_social {
+    margin-top: 44px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+    & p {
+      margin-top: 46px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.832;
+      text-align: right;
+      color: var(--black-text-color);
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.856;
+      }
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.878;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    & li + li {
+      margin-left: 28px;
+    }
+    @media screen and (min-width: 768px) {
+      & svg {
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    & svg:hover,
+    & svg:focus {
+      fill: var(--main-red-color);
+      transition: var(--timing-function);
+    }
+  }
+
+  &_contacts-link {
+    color: var(--main-red-color);
+  }
+
+  &_bottom {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 85px;
+    padding-right: 85px;
+    width: auto;
+    height: auto;
+    border-top: 1px solid var(--quotation-mark-grey-color);
+
+    & p {
+      padding-top: 24px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--grey-text-color);
+      @media screen and (min-width: 768px) {
+        padding-top: 29px;
+        line-height: 1.856;
+        letter-spacing: 0.02em;
+      }
+      @media screen and (min-width: 1280px) {
+        padding-top: 10px;
+      }
+    }
+  }
+}

@@ -66,3 +66,148 @@
     </button>
   </div>
 </header>
+
+<section class="hero section" id="home">
+  <div class="container hero__container">
+    <div class="hero__left-container">
+      <div class="hero__header-container">
+        <h1 class="hero__header">
+          ice cream made with <span class="hero__header--big">passion</span>
+        </h1>
+        <ul class="hero__nav-list hero-navigation list">
+          <li class="hero-navigation__item">
+            <a href=".#products" class="hero-navigation__link hero-navigation__link--red"
+              >Products</a
+            >
+          </li>
+          <li class="hero-navigation__item">
+            <a href="#how-made" class="hero-navigation__link hero-navigation__link--white"
+              >How it’s made?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="hero__milk-container">
+        <picture>
+          <source
+            srcset="
+              ./images/hero_header/splashing-milk_tablet-min.png    1x,
+              ./images/hero_header/splashing-milk_tablet@2x-min.png 2x
+            "
+            media="(max-width: 1279px)" />
+
+          <source
+            srcset="
+              ./images/hero_header/splashing-milk_laptop-min.png    1x,
+              ./images/hero_header/splashing-milk_laptop@2x-min.png 2x
+            "
+            media="(min-width: 1280px)" />
+          <img
+            src="./images/hero_header/splashing-milk_tablet-min.png"
+            alt="logo"
+            width="124"
+            height="126"
+            class="hero__milk-splash-image"
+        /></picture>
+        <p class="hero__milk-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="hero__details-button">
+          <svg class="hero__details-icon">
+            <use class="" href="./images/sprite.svg#icon-arrow-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero_header/ellipse-header_mobile-min.png    1x,
+          ./images/hero_header/ellipse-header_mobile@2x-min.png 2x
+        "
+        media="(max-width: 767px)" />
+
+      <source
+        srcset="
+          ./images/hero_header/ellipse-header_tablet-min.png    1x,
+          ./images/hero_header/ellipse-header_tablet@2x-min.png 2x
+        "
+        media="(max-width: 1279px)" />
+
+      <source
+        srcset="
+          ./images/hero_header/ellipse-header_laptop-min.png    1x,
+          ./images/hero_header/ellipse-header_laptop@2x-min.png 2x
+        "
+        media="(min-width: 1280px)" />
+      <img
+        src="./images/hero_header/ellipse-header_tablet-min.png"
+        alt="logo"
+        width="324"
+        height="322"
+        class="header_pink-ellipse-image"
+    /></picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero_header/ice-cream_mobile-min.png    1x,
+          ./images/hero_header/ice-cream_mobile@2x-min.png 2x
+        "
+        media="(max-width: 767px)" />
+
+      <source
+        srcset="
+          ./images/hero_header/ice-cream_tablet-min.png    1x,
+          ./images/hero_header/ice-cream_tablet@2x-min.png 2x
+        "
+        media="(max-width: 1279px)" />
+
+      <source
+        srcset="
+          ./images/hero_header/ice-cream_laptop-min.png    1x,
+          ./images/hero_header/ice-cream_laptop@2x-min.png 2x
+        "
+        media="(min-width: 1280px)" />
+      <img
+        src="./images/hero_header/ice-cream_tablet-min.png"
+        alt="logo"
+        width="324"
+        height="322"
+        class="header_ice-cream-image"
+    /></picture>
+    <div class="hero__right-container">
+      <ul class="hero__institutions-list hero-institutions list">
+        <li class="hero-institutions__item">
+          <p class="hero-institutions__number hero-institutions__number--upper">16</p>
+          <p class="hero-institutions__name">cafes</p>
+        </li>
+        <li class="hero-institutions__item">
+          <p class="hero-institutions__number">23</p>
+          <p class="hero-institutions__name">food trucks</p>
+        </li>
+      </ul>
+      <picture>
+        <source
+          srcset="
+            ./images/hero_header/girl_tablet-min.png    1x,
+            ./images/hero_header/girl_tablet@2x-min.png 2x
+          "
+          media="(max-width: 1279px)" />
+
+        <source
+          srcset="
+            ./images/hero_header/girl_laptop-min.png    1x,
+            ./images/hero_header/girl_laptop@2x-min.png 2x
+          "
+          media="(min-width: 1280px)" />
+        <img
+          src="./images/hero_header/girl_tablet-min.png"
+          alt="logo"
+          width="168"
+          height="132"
+          class="header__girl-image"
+      /></picture>
+    </div>
+  </div>
+</section>

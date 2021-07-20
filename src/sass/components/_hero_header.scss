@@ -1,6 +1,3 @@
-body {
-  background-color: pink;
-}
 .menu-toggle {
   min-height: 12px;
   min-width: 20px;
@@ -60,15 +57,17 @@ body {
 }
 .header-container {
   display: flex;
-  justify-content: center;
-  position: relative;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
   padding-top: 38px;
   @media (min-width: 1280px) {
     padding-left: 240px;
   }
 }
 .logo-link {
-  margin-right: 61px;
   @media (min-width: 768px) {
     margin-right: 290px;
   }
@@ -99,7 +98,7 @@ body {
   @media (max-width: 767px) {
     display: none;
   }
-  @media (min-width: 768px) and (max-width: 1280px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     margin-left: 30px;
   }
   &:hover,
@@ -112,4 +111,361 @@ body {
   width: 6px;
   height: 10px;
   margin-left: 12px;
+}
+.hero__details-button {
+  background-color: var(--main-white-color);
+  @media (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+  @media (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-red-color);
+
+  border-radius: 50%;
+  border: none;
+  padding: 0px;
+  &:hover,
+  &:focus {
+    color: var(--main-white-color);
+    background-color: var(--main-red-color);
+    transition: var(--timing-function);
+    cursor: pointer;
+  }
+}
+.hero__details-icon {
+  width: 8px;
+  height: 6px;
+  @media (min-width: 768px) {
+    width: 5px;
+    height: 5px;
+  }
+  @media (min-width: 1280px) {
+    width: 8px;
+    height: 6px;
+  }
+  fill: currentColor;
+}
+.hero__milk-splash-image {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    width: 124px;
+    height: 126px;
+    position: absolute;
+    bottom: -6px;
+    left: 4px;
+  }
+  @media (min-width: 1280px) {
+    width: 188px;
+    height: 190px;
+    left: -30px;
+    bottom: -11px;
+  }
+}
+.header_pink-ellipse-image {
+  width: 290px;
+  height: 344px;
+  @media (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: -66px;
+    right: 124px;
+  }
+  @media (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    top: -114px;
+    right: 170px;
+  }
+  top: -110px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+.header_ice-cream-image {
+  position: absolute;
+  top: -101px;
+  right: 32px;
+  z-index: 2;
+  width: 170px;
+  height: 410px;
+  @media (min-width: 768px) {
+    width: 142px;
+    height: 336px;
+    top: -30px;
+    right: 224px;
+  }
+  @media (min-width: 1280px) {
+    width: 236px;
+    height: 557px;
+    top: -46px;
+    right: 360px;
+  }
+}
+.hero__milk-container,
+.hero__right-container {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.hero__container {
+  position: relative;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.hero__header {
+  width: 218px;
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+
+  @media (min-width: 768px) {
+    width: 162px;
+    font-size: 22px;
+    line-height: 1.136;
+  }
+  @media (min-width: 1280px) {
+    width: 277px;
+    font-size: 38px;
+    line-height: 1.15;
+  }
+}
+.hero__header--big {
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+
+  color: var(--main-red-color);
+  @media (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.89;
+  }
+  @media (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 0.89;
+  }
+}
+.hero__milk-description {
+  @media (min-width: 768px) {
+    width: 114px;
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--main-white-color);
+  }
+  @media (min-width: 1280px) {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+.hero-navigation__link {
+  border-radius: 20px;
+  font-size: 8px;
+  line-height: 1.25;
+  display: block;
+  padding: 7px 14px;
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 11px 23px;
+  }
+}
+.hero-navigation__link--red {
+  background-color: var(--main-red-color);
+  color: var(--main-white-color);
+  .hero-navigation__item:hover &,
+  .hero-navigation__item:focus & {
+    background-color: var(--ellipse-dark-red-color);
+  }
+}
+.hero-navigation__link--white {
+  background-color: var(--main-white-color);
+  color: var(--main-red-color);
+  @media (min-width: 1280px) {
+    padding: 11px 20px;
+  }
+  .hero-navigation__item:hover &,
+  .hero-navigation__item:focus & {
+    background-color: var(--hover-grey-color);
+  }
+}
+.hero-navigation {
+  display: flex;
+}
+.hero-navigation__item {
+  & + & {
+    margin-left: 8px;
+    @media (min-width: 1280px) {
+      margin-left: 15px;
+    }
+  }
+}
+.hero__institutions-list {
+  margin-left: 415px;
+  @media (min-width: 1280px) {
+    margin-left: 596px;
+  }
+}
+.hero-institutions__item {
+  z-index: 2;
+  position: relative;
+  & + & {
+    margin-top: 13px;
+    @media (min-width: 1280px) {
+      margin-top: 15px;
+    }
+  }
+}
+.hero-institutions__number {
+  font-family: var(--second-font-family);
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline;
+
+  color: var(--main-red-color);
+  @media (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+.hero-institutions__name {
+  font-family: var(--main-white-color);
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: var(--main-white-color);
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.286;
+  }
+  @media (min-width: 1280px) {
+    .hero-institutions__number + & {
+      margin-top: 2px;
+    }
+  }
+}
+
+.hero__nav-list {
+  margin-top: 20px;
+  @media (min-width: 1280px) {
+    margin-top: 25px;
+  }
+}
+.hero__details-button {
+  margin-top: 7px;
+  @media (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+.hero-institutions__number:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  @media screen and (min-width: 1280px) {
+    top: -5px;
+    right: -16px;
+  }
+  width: 16px;
+  height: 16px;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../images/hero_header/white_ellipse-header_tablet-min.png');
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/hero_header/white_ellipse-header_tablet@2x-min.png');
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/hero_header/white_ellipse-header_laptop-min.png');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/hero_header/white_ellipse-header_laptop@2x-min.png');
+      }
+    }
+  }
+}
+.hero-institutions__number--upper:before {
+  top: -2px;
+  @media screen and (min-width: 1280px) {
+    top: -6px;
+  }
+}
+.hero {
+  background-color: var(--background-pink-color);
+  padding-top: 193px;
+  padding-bottom: 160px;
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 171px;
+    padding-bottom: 56px;
+  }
+}
+.hero__header-container {
+  position: relative;
+  z-index: 9;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 15px;
+  }
+}
+.hero__milk-container {
+  margin-top: 66px;
+  padding-left: 120px;
+  position: relative;
+  @media screen and (min-width: 1280px) {
+    margin-top: 112px;
+    padding-left: 180px;
+  }
+}
+.header__girl-image {
+  position: absolute;
+  z-index: 5;
+  bottom: -34px;
+  right: 18px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    width: 168px;
+    height: 133px;
+  }
+  @media (min-width: 1280px) {
+    width: 293px;
+    height: 232px;
+    bottom: -56px;
+    right: 6px;
+  }
 }

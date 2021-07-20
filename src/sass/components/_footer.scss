@@ -119,13 +119,13 @@
       & svg {
         width: 34px;
         height: 34px;
+        transition: fill 250ms var(--timing-function);
       }
     }
 
     & svg:hover,
     & svg:focus {
       fill: var(--main-red-color);
-      transition: var(--timing-function);
     }
   }
 

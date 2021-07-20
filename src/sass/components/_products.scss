@@ -290,6 +290,8 @@
   align-items: center;
   background-color: var(--main-white-color);
   color: var(--main-red-color);
+  transition: background-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 
   border-radius: 50%;
   border: none;
@@ -298,7 +300,6 @@
   &:focus {
     color: var(--main-white-color);
     background-color: var(--main-red-color);
-    transition: var(--timing-function);
     cursor: pointer;
   }
 }

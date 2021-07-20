@@ -219,7 +219,7 @@
   background-color: var(--main-white-color);
   border: transparent;
   border-radius: 22px;
-
+  transition: background-color 250ms var(--timing-function);
   &:hover,
   &:focus,
   &:active {

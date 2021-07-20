@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--light-pink-background-color);
+  &_title {
+    width: 234px;
+    height: 135px;
+  }
+  &_title-made {
+    font-weight: 400;
+    font-family: var(--second-font-family);
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--section-header-pink-color);
+  }
+  &_title-passion {
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.146;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--main-red-color);
+  }
+}

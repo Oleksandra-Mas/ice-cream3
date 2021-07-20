@@ -212,12 +212,25 @@
   }
 
   @media screen and (min-width: 768px) {
+    background-image: url('../images/customer-review/comment-three-dots_tablet-min.png');
     top: -60%;
     left: 48%;
+
+    @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-three-dots_tablet@2x-min.png');
+      }
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    top: -85%;
+    background-image: url('../images/customer-review/comment-three-dots_laptop-min.png');
+    top: -50%;
+    @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-three-dots_laptop@2x-min.png');
+      }
+    }
   }
 }
 

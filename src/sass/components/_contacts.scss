@@ -206,13 +206,22 @@
     padding: 11px 15px;
     border-radius: 22px;
     border: none;
+    transition: background-color 250ms var(--timing-function);
     &_bc-red {
       background-color: var(--main-red-color);
       color: var(--main-white-color);
+      &:hover,
+      &:focus {
+        background-color: var(--ellipse-dark-red-color);
+      }
     }
     &_bc-white {
       background-color: var(--main-white-color);
       color: var(--main-red-color);
+      &:hover,
+      &:focus {
+        background-color: var(--hover-grey-color);
+      }
     }
   }
   &__svg {

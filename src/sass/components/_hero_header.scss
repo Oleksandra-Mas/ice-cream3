@@ -38,6 +38,7 @@
   font-size: 16px;
   line-height: 1.31;
   color: var(--main-white-color);
+  transition: color 250ms var(--timing-function);
 
   .nav-list__item:focus &,
   .nav-list__item:hover & {
@@ -95,6 +96,7 @@
   border: transparent;
   height: 44px;
   border-radius: 22px;
+  transition: background-color 250ms var(--timing-function);
   @media (max-width: 767px) {
     display: none;
   }
@@ -130,11 +132,12 @@
   border-radius: 50%;
   border: none;
   padding: 0px;
+
+  transition: background-color 250ms var(--timing-function);
   &:hover,
   &:focus {
     color: var(--main-white-color);
     background-color: var(--main-red-color);
-    transition: var(--timing-function);
     cursor: pointer;
   }
 }
@@ -273,6 +276,7 @@
   line-height: 1.25;
   display: block;
   padding: 7px 14px;
+  transition: background-color 250ms var(--timing-function);
   @media (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.29;

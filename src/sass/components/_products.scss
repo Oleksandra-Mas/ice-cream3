@@ -154,6 +154,9 @@
     }
   }
 }
+.ware-list__item--orange {
+  background-color: var(--background-yellow-color);
+}
 .ware-list__item--orange::before {
   content: '';
   background-image: url(../images/products/ice-cream-yellow_mobile-min.png);
@@ -199,6 +202,9 @@
       background-image: url(../images/products/ice-cream-yellow_laptop@2x-min.png);
     }
   }
+}
+.ware-list__item--green {
+  background-color: var(--background-green-color);
 }
 .ware-list__item--green::before {
   content: '';

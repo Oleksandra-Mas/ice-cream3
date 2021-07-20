@@ -1,68 +1,65 @@
-
 .gallery-section {
-    background: linear-gradient(to bottom, #FFF5F6 45%, #fff 45%);
+  background: linear-gradient(to bottom, #fff5f6 45%, #fff 45%);
 }
 .gallery__list {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 .gallery__item {
-    list-style-type: none;
+  list-style-type: none;
+  cursor: pointer;
 }
 .gallery__item:not(:last-child) {
-    margin-right: 2px;
-@media screen and (min-width: 768px) {
-   margin-right: 4px;
+  margin-right: 2px;
+  @media screen and (min-width: 768px) {
+    margin-right: 4px;
   }
   @media screen and(min-width:1280px) {
     margin-right: 10px;
   }
 }
 .gallery__box {
+  margin-top: 10px;
+  margin-top: 2px;
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+  }
+  @media screen and(min-width:1280px) {
     margin-top: 10px;
-    margin-top: 2px;
-    @media screen and (min-width: 768px) {
-       margin-top: 4px;
-      }
-      @media screen and(min-width:1280px) {
-        margin-top: 10px;
-      }
+  }
 }
-// 
+//
 .gallery__item--4 {
-    margin-top: 10px;
-    @media screen and (min-width: 768px) {
-        margin-top: 20px;
-       }
-       @media screen and(min-width:1280px) {
-         margin-top: 60px;
-       }
- }
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-top: 60px;
+  }
+}
 
-.gallery__item--5 { 
+.gallery__item--5 {
+  margin-top: -32px;
+  @media screen and (min-width: 768px) {
     margin-top: -32px;
-    @media screen and (min-width: 768px) {
-   margin-top: -32px;
   }
   @media screen and(min-width:1280px) {
     margin-top: -46px;
   }
 }
 .gallery__img {
-   border-radius: 10px;
-  
+  border-radius: 10px;
 }
 .gallery__pic {
-    -moz-transition: all 1s ease-out;
-     -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
 }
-.gallery__pic:hover  {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
+.gallery__pic:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
-
-

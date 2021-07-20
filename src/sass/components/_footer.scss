@@ -4,6 +4,7 @@
   background-color: var(--light-pink-background-color);
   @media screen and (min-width: 768px) {
     padding-bottom: 18px;
+    padding-top: 158px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 165px;
@@ -83,7 +84,7 @@
       line-height: 1.138px;
     }
   }
- 
+
   &_social {
     margin-top: 44px;
     @media screen and (min-width: 768px) {

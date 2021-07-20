@@ -1,5 +1,8 @@
 .footer {
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: var(--light-pink-background-color);
+  padding-top: 112px;
   &_title {
     width: 234px;
     height: 135px;
@@ -14,6 +17,7 @@
     color: var(--section-header-pink-color);
   }
   &_title-passion {
+    margin-top: 18px;
     font-family: var(--second-font-family);
     font-weight: 400;
     font-size: 34px;
@@ -22,5 +26,31 @@
     text-transform: uppercase;
 
     color: var(--main-red-color);
+  }
+  &_social {
+    margin-top: 44px;
+    & p {
+      margin-top: 46px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.832;
+      text-align: right;
+      color: var(--black-text-color);
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    & li + li {
+      margin-left: 28px;
+    }
+  }
+  &_contacts-link {
+    color: var(--main-red-color);
+  }
+  &_bottom {
+    margin-top: 44px;
+
   }
 }

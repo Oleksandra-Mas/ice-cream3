@@ -2,15 +2,31 @@
   padding-top: 112px;
   padding-bottom: 24px;
   background-color: var(--light-pink-background-color);
+  @media screen and (min-width: 768px) {
+    padding-bottom: 18px;
+  }
+
   &_page {
     margin-bottom: 44px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 90px;
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
   &_title {
     width: 234px;
     height: 135px;
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      height: 183px;
+    }
   }
   &_title-made {
     font-weight: 400;
@@ -20,6 +36,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--section-header-pink-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      letter-spacing: 0.04em;
+      line-height: 1.154;
+    }
   }
   &_title-passion {
     margin-top: 18px;
@@ -29,11 +51,24 @@
     line-height: 1.146;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: var(--main-red-color);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+      line-height: 1.154;
+      font-size: 48px;
+      line-height: 1.146;
+      letter-spacing: 0.06em;
+    }
   }
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 16px;
+  // }
   &_social {
     margin-top: 44px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
     & p {
       margin-top: 46px;
       font-weight: 700;
@@ -41,6 +76,10 @@
       line-height: 1.832;
       text-align: right;
       color: var(--black-text-color);
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.856;
+      }
     }
   }
   ul {
@@ -50,6 +89,13 @@
     & li + li {
       margin-left: 28px;
     }
+    @media screen and (min-width: 768px) {
+      & svg {
+        width: 34px;
+        height: 34px;
+      }
+    }
+
     & svg:hover,
     & svg:focus {
       fill: var(--main-red-color);
@@ -67,6 +113,12 @@
     //     height: 66px; = 24px (p) + 42px (height)
     height: 66px;
     border: 1px solid teal;
+    @media screen and (min-width: 768px) {
+      width: auto;
+      height: auto;
+      border-top: 1px solid  var(--quotation-mark-grey-color);;
+
+    }
 
     & p {
       padding-top: 24px;
@@ -76,6 +128,12 @@
       text-align: center;
       letter-spacing: 0.03em;
       color: var(--grey-text-color);
+      @media screen and (min-width: 768px) {
+        padding-top: 29px;
+        line-height: 1.856;
+
+        letter-spacing: 0.02em;
+      }
     }
   }
 }

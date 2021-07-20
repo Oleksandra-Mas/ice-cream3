@@ -1,0 +1,258 @@
+.customer__section {
+  padding-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 119px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 132px;
+  }
+}
+
+.customer__portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.customer__comment-box {
+  width: 280px;
+  height: 308px;
+  padding: 43px 0 26px 0;
+  margin: 0 auto;
+
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  justify-content: center;
+
+  color: var(--black-text-color);
+  background-color: var(--quote-background-grey-color);
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 164px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    height: 138px;
+  }
+}
+
+.customer__comment-text {
+  position: relative;
+  z-index: 5;
+
+  width: 180px;
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  color: var(--black-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  letter-spacing: 0.03em;
+
+  background-image: repeating-linear-gradient(
+    to top,
+    var(--quotation-mark-grey-color),
+    var(--quotation-mark-grey-color) 1px,
+    transparent 1px,
+    transparent 31px
+  );
+
+  &::before {
+    @extend %customer__comment-text-before;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 544px;
+    padding: 0 39px;
+
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 822px;
+    padding: 0 31px;
+
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
+
+%customer__comment-text-before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+
+  left: 10%;
+  top: -8%;
+
+  @media screen and (min-width: 768px) {
+    left: 0.5%;
+    top: -20%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 0%;
+  }
+}
+
+.customer__comment-text::before {
+  content: '';
+  width: 54px;
+  height: 40px;
+  background-image: url('../images/customer-review/comment-sign_mobile-min.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/customer-review/comment-sign_mobile@2x-min.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/customer-review/comment-sign_tablet-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-sign_tablet@2x-min.png');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/customer-review/comment-sign_laptop-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-sign_laptop@2x-min.png');
+      }
+    }
+  }
+}
+
+.customer__signature {
+  margin-top: 52px;
+  position: relative;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: center;
+
+  color: var(--black-text-color);
+
+  @extend %customer__signature-before;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 42px;
+
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 34px;
+
+    font-size: 20px;
+  }
+}
+
+%customer__signature-before {
+  display: block;
+}
+
+.customer__signature::before {
+  position: absolute;
+  left: 46%;
+  top: -80%;
+  content: '';
+  width: 32px;
+  height: 4px;
+  background-image: url('../images/customer-review/comment-three-dots_mobile-min.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/customer-review/comment-three-dots_mobile@2x-min.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/customer-review/comment-three-dots_tablet-min.png');
+    top: -60%;
+    left: 48%;
+
+    @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-three-dots_tablet@2x-min.png');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/customer-review/comment-three-dots_laptop-min.png');
+    top: -50%;
+    @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/customer-review/comment-three-dots_laptop@2x-min.png');
+      }
+    }
+  }
+}
+
+.customer__slider-list {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
+}
+
+.customer__slider-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.customer__slider-icon {
+  fill: #d9d9d9;
+}
+
+.customer__slider-icon--current {
+  fill: #d31342;
+}

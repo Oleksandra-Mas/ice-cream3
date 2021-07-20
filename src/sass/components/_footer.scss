@@ -50,7 +50,12 @@
     & li + li {
       margin-left: 28px;
     }
+    & svg:hover,
+    & svg:focus {
+      fill: var(--main-red-color);
+    }
   }
+
   &_contacts-link {
     color: var(--main-red-color);
   }
@@ -70,7 +75,6 @@
       line-height: 1.6;
       text-align: center;
       letter-spacing: 0.03em;
-
       color: var(--grey-text-color);
     }
   }

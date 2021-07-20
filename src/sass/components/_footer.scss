@@ -1,8 +1,13 @@
 .footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: var(--light-pink-background-color);
   padding-top: 112px;
+  padding-bottom: 24px;
+  background-color: var(--light-pink-background-color);
+  &_page {
+    margin-bottom: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
   &_title {
     width: 234px;
     height: 135px;
@@ -49,8 +54,24 @@
   &_contacts-link {
     color: var(--main-red-color);
   }
-  &_bottom {
-    margin-top: 44px;
 
+  &_bottom {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    //     height: 66px; = 24px (p) + 42px (height)
+    height: 66px;
+    border: 1px solid teal;
+
+    & p {
+      padding-top: 24px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: var(--grey-text-color);
+    }
   }
 }

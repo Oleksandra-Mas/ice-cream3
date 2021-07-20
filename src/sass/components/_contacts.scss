@@ -227,3 +227,15 @@
     }
   }
 }
+.contacts-buttons-list__button_bc-white {
+  &:hover,
+  &:focus {
+    background-color: var(--hover-grey-color);
+  }
+}
+.contacts-buttons-list__button_bc-red {
+  &:hover,
+  &:focus {
+    background-color: var(--ellipse-dark-red-color);
+  }
+}

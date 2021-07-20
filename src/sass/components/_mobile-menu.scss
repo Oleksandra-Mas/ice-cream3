@@ -67,13 +67,14 @@
   font-size: 14px;
   line-height: 1.29;
   color: var(--main-white-color);
-}
-.menu-site-nav__link {
-  .menu-site-nav__item:hover &,
-  .menu-site-nav__item:hover & {
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
     color: var(--main-red-color);
   }
 }
+
 .menu-site-nav__item {
   padding: 12px 0;
   padding-left: 20px;

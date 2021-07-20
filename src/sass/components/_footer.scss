@@ -83,9 +83,7 @@
       line-height: 1.138px;
     }
   }
-  // @media screen and (min-width: 1280px) {
-  //   margin-top: 16px;
-  // }
+ 
   &_social {
     margin-top: 44px;
     @media screen and (min-width: 768px) {
@@ -126,6 +124,7 @@
     & svg:hover,
     & svg:focus {
       fill: var(--main-red-color);
+      transition: var(--timing-function);
     }
   }
 
@@ -141,10 +140,6 @@
     width: auto;
     height: auto;
     border-top: 1px solid var(--quotation-mark-grey-color);
-    // @media screen and (min-width: 768px) {
-    //   width: auto;
-    //   height: auto;
-    // }
 
     & p {
       padding-top: 24px;

@@ -24,8 +24,7 @@
 ;(() => {
   const map1 = {
     setMap1: document.querySelectorAll('[map-button-chicago]'),
-    closeMap1: document.querySelector('[map-button-los-angeles]'),
-    closeMap1: document.querySelector('[map-button-new-york]'),
+    closeMap1: document.querySelector('[map-button-los-angeles]', '[map-button-new-york]'),
     mapF: document.querySelector('[map-1]'),
   }
   
@@ -35,7 +34,7 @@
   map1.closeMap1.addEventListener('click', closeMapChicago)
 
   
-function setMapChicago() {
+  function setMapChicago() {
    map1.mapF.classList.remove('hide'),
       map1.mapF.classList.add('show')
   }
@@ -48,8 +47,7 @@ function setMapChicago() {
 ;(() => {
  const map2 = {
     setMap2: document.querySelectorAll('[map-button-los-angeles]'),
-    closeMap2: document.querySelector('[map-button-chicago]'),
-    closeMap2: document.querySelector('[map-button-new-york]'),
+    closeMap2: document.querySelector('[map-button-chicago]', '[map-button-new-york]'),
     mapS: document.querySelector('[map-2]'),
   }
 
@@ -74,8 +72,7 @@ function setMapChicago() {
 ;(() => {
  const map3 = {
     setMap3: document.querySelectorAll('[map-button-new-york]'),
-    closeMap3: document.querySelector('[map-button-chicago]'),
-    closeMap3: document.querySelector('[map-button-los-angeles]'),
+    closeMap3: document.querySelector('[map-button-chicago]', '[map-button-los-angeles]'),
     mapT: document.querySelector('[map-3]'),
   }
 

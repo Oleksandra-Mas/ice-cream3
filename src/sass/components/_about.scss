@@ -77,12 +77,11 @@
   }
 }
 
-// NEED TO CHECK
 .about__overlay {
   background-image: url('../images/about/milk-background_mobile-min.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0% 90%;
+  background-position: 0% 93%;
 
   width: auto;
   max-width: 100%;
@@ -94,7 +93,7 @@
   }
 
   @media screen and (min-width: 480px) {
-    background-position: 50% 90%;
+    background-position: 50% 93%;
     background-size: 480px;
   }
 
@@ -128,12 +127,16 @@
 }
 
 .about__description {
-  max-width: 220px;
-  margin: 0 40px;
+  max-width: 100%;
+  padding: 0 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    max-width: 380px;
+  }
 
   @media screen and (min-width: 768px) {
     margin: 45px 0 0 0;

@@ -24,7 +24,7 @@
 ;(() => {
   const map1 = {
     setMap1: document.querySelectorAll('[map-button-chicago]'),
-    closeMap1: document.querySelector('[map-button-los-angeles]', '[map-button-new-york]'),
+    closeMap1: document.querySelector('[close-map1]'),
     mapF: document.querySelector('[map-1]'),
   }
   
@@ -47,7 +47,7 @@
 ;(() => {
  const map2 = {
     setMap2: document.querySelectorAll('[map-button-los-angeles]'),
-    closeMap2: document.querySelector('[map-button-chicago]', '[map-button-new-york]'),
+    closeMap2: document.querySelector('[close-map2]'),
     mapS: document.querySelector('[map-2]'),
   }
 
@@ -72,7 +72,7 @@
 ;(() => {
  const map3 = {
     setMap3: document.querySelectorAll('[map-button-new-york]'),
-    closeMap3: document.querySelector('[map-button-chicago]', '[map-button-los-angeles]'),
+    closeMap3: document.querySelector('[close-map3]'),
     mapT: document.querySelector('[map-3]'),
   }
 

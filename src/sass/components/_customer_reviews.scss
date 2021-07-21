@@ -234,25 +234,49 @@
   }
 }
 
-.customer__slider-list {
-  margin-top: 30px;
+/* SLIDER */
+.customer__slider {
+  position: relative;
+}
+.slick-dots {
+  position: absolute;
+  top: 102%;
+  left: 25%;
 
   display: flex;
+  align-items: center;
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    margin-top: 35px;
+    top: 105%;
+    left: 40%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 42%;
   }
 }
 
-.customer__slider-item:not(:last-child) {
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots li:not(:last-child) {
   margin-right: 18px;
 }
 
-.customer__slider-icon {
-  fill: #d9d9d9;
+.slick-dots button {
+  font-size: 0;
+
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/customer-review/grey-dot.svg');
+  border: transparent;
 }
 
-.customer__slider-icon--current {
-  fill: #d31342;
+.slick-active button {
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/customer-review/home-dot.svg');
+  border: transparent;
 }

@@ -93,13 +93,19 @@
     }
   }
 
+  @media screen and (min-width: 480px) {
+    background-position: 50% 90%;
+    background-size: 480px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: none;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url('../images/about/milk-background_laptop-min.png');
-    background-position: 0% 140%;
+    background-position: 50% 131%;
+    background-size: 1280px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
         background-image: url('../images/about/milk-background_laptop@2x-min.png');

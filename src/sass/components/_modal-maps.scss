@@ -1,0 +1,83 @@
+.modal-maps {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1280px;
+  height: 80%;
+  &__maps-slider {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+  }
+  &__slide-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+  }
+  &__chicago {
+  }
+  &__los-angeles {
+  }
+  &__new-york {
+  }
+  &__buttons-list {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    margin-right: -20px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    line-height: 1.312;
+    font-weight: bold;
+    padding: 11px 15px;
+    border-radius: 22px;
+    border: none;
+    margin-right: 20px;
+    background-color: var(--main-white-color);
+    color: var(--main-red-color);
+    transition: background-color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
+    &:hover {
+      background-color: var(--hover-grey-color);
+    }
+    &:focus {
+      background-color: var(--main-red-color);
+      color: var(--main-white-color);
+    }
+  }
+  &__button-close {
+    position: absolute;
+    z-index: 10000;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    justify-content: center;
+    color: var(--main-white-color);
+    background-color: initial;
+    &:hover,
+    &:focus {
+      color: var(--main-red-color);
+    }
+  }
+  &__close-svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+  }
+}
+.current-map {
+  transform: translate(0);
+}

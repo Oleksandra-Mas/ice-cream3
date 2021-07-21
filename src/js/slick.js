@@ -6,7 +6,7 @@ $('.one-time').slick({
   slidesToShow: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 800,
+    autoplaySpeed: 2500,
     dotsClass: 'slick-dots'
   
     

@@ -1,12 +1,12 @@
 .customer__section {
-  padding-bottom: 86px;
+  padding-bottom: 128px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
+    padding-bottom: 166px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 132px;
+    padding-bottom: 179px;
   }
 }
 
@@ -239,9 +239,11 @@
   position: relative;
 }
 .slick-dots {
+  padding-left: 0;
   position: absolute;
   top: 102%;
-  left: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 
   display: flex;
   align-items: center;
@@ -249,11 +251,6 @@
 
   @media screen and (min-width: 768px) {
     top: 105%;
-    left: 40%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    left: 42%;
   }
 }
 

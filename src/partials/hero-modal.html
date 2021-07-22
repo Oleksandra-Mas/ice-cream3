@@ -1,0 +1,46 @@
+<div class="hero-backdrop is-hidden" data-modal>
+    <div class="hero-modal">
+        <button type="button" class="hero-modal__btn-close" atl="Close" data-modal-close>
+            <svg class="hero-modal__icon-close" width="11" height="11">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <form class="hero-modal__form">
+            <h3 class="hero-modal__form-title">You can make an order right here</h3>
+            <h4 class="hero-modal__form-subtitle">Leave your phone number and we will contact you in a few minutes</h4>
+
+            <div class="hero-modal__form-field">
+                <label for="name" class="hero-modal__form-label"></label>
+                <div class="hero-modal__form-input-box">
+                    <input type="text" class="hero-modal__form-input" name="name" id="name" placeholder="Name"/>
+                </div>
+            </div>
+
+            <div class="hero-modal__form-field">
+                <label for="tel" class="hero-modal__form-label"></label>
+                <div class="hero-modal__form-input-box">
+                    <input type="tel" class="hero-modal__form-input" name="tel" id="tel" placeholder="Phone number"/>
+                </div>
+            </div>
+
+            <div class="hero-modal__form-field">
+                <label for="comment" class="hero-modal__form-label"></label>
+                <textarea name="comment" id="comment" class="hero-modal__form-comment-area"
+                    placeholder="Leave your comment"></textarea>
+            </div>
+
+
+            <label class="hero-modal__policy">
+                <input class="hero-modal__policy-checkbox" type="checkbox" name="agree">
+                <span class="hero-modal__policy-icon"></span>
+                <span>You agree to our</span>&nbsp;
+                <a href="" class="hero-modal__policy-link">Privacy & Cookie Policy</a>
+            </label>
+
+
+            <button type="submit" class="hero-modal__form-btn-submit">Send</button>
+        </form>
+
+    </div>
+</div>

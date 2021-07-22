@@ -72,6 +72,12 @@
       background-color: var(--main-red-color);
       color: var(--main-white-color);
     }
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      margin-right: 15px;
+      padding: 8px 12px;
+    }
   }
   &__button-close {
     position: absolute;

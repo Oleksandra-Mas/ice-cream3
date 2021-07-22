@@ -269,6 +269,8 @@
   height: 12px;
   background-image: url('../images/customer-review/grey-dot.svg');
   border: transparent;
+  background-color: transparent;
+  background-repeat: no-repeat;
 }
 
 .slick-active button {
@@ -276,4 +278,6 @@
   height: 12px;
   background-image: url('../images/customer-review/home-dot.svg');
   border: transparent;
+  background-color: transparent;
+  background-repeat: no-repeat;
 }
